@@ -1,2 +1,2 @@
 # simple-recipe
-How to make French Toast
+Practice basics of JS objects to display the ingredients to make french toast.
