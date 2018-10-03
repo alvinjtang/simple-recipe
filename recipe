@@ -1,0 +1,37 @@
+let frenchToast = {
+  ingredients: {
+   bread: {
+      type: 'baguette',
+      amount: '10 slices',
+      condition: 'stale'
+    },
+    eggs: {
+      type: 'brown',
+      amount: '2',
+      condition: 'organic'
+    },
+    cream: {
+      type: 'heavy',
+      amount: '150ml',
+      condition: 'cold'
+    },
+    spice: {
+      type: 'cinnamon',
+      amount: '1 tbsp',
+      condition: 'dried'
+    }
+  }
+}
+
+let howToMake = function (dish) {
+
+if (dish) {
+console.log('The ingredients you\'ll need to make french toast are:');
+
+for (let recipe in frenchToast.ingredients) {
+  console.log(`${frenchToast.ingredients[recipe].amount} ${frenchToast.ingredients[recipe].condition} ${frenchToast.ingredients[recipe].type} ${recipe}`)
+}
+} else {
+  console.log('Please type in a dish')
+}
+};
